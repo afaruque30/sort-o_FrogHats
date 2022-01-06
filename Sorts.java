@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Sorts {
   public static int insertion( ArrayList<Comparable> data ) {
     int counter = 0;
@@ -60,17 +62,19 @@ public class Sorts {
    return counter;
  }//end selectionSort
 
- public static void bubbleSortV( ArrayList<Comparable> data) {
+ public static int bubble( ArrayList<Comparable> data) {
   /* YOUR IMPLEMENTATION HERE */
   //further optimization
   // boolean isSorted = true;
   int counter = 0;
 
+
+
   int size = data.size();
   for (int i = 0; i < size; i++) {
     for (int j = size - 1; j > 0; j--) {
       //swapping
-      isSorted = true;
+      // isSorted = true;
       if (data.get(j).compareTo(data.get(j - 1)) < 0) {
         // isSorted = false; //you swap at least once
         int temp = (int) data.get(j);
@@ -79,7 +83,7 @@ public class Sorts {
         data.add(j, temp2);
         data.remove(j - 1);
         data.add(j - 1, temp);
-        counter++
+        counter++;
       }
 
     }
@@ -88,6 +92,7 @@ public class Sorts {
     //
     // }
   }
-
+  return counter;
 }
+
 }
