@@ -1,9 +1,11 @@
 import java.util.ArrayList;
 
 public class Sorts {
-  public static int insertion( ArrayList<Comparable> data ) {
-    int counter = 0;
+  public static int[] insertion( ArrayList<Comparable> data ) {
+    int[] returnVals = new int[2];
+
     for(int partition = 1; partition < data.size(); partition++) {
+      returnVals[1]++;
      //partition marks first item in unsorted region
 
      // System.out.println( "\npartition: " + partition + "\tdataset:"); //diag
@@ -21,19 +23,19 @@ public class Sorts {
          Comparable temp = data.get(i);
          data.remove(temp);
          data.add(i-1, temp);
-         counter++;
+         returnVals[0]++;
 
        }
        else
          break;
      }
    }
-   return counter;
+   return returnVals;
  }
 
- public static int selection( ArrayList<Comparable> data ) {
+ public static int[] selection( ArrayList<Comparable> data ) {
    //note: this version places greatest value at "rightmost" end
-   int counter = 0;
+   int[] returnVals = new int[2];
    //maxPos will point to position of SELECTION (greatest value)
    int maxPos = 0;
 
@@ -54,27 +56,29 @@ public class Sorts {
      //shift
      data.add(pass, data.get(maxPos));
      data.remove(data.get(maxPos));
-     counter++;
+     returnVals[0]++;
+     returnVals[1]++;
 
      //
      // System.out.println( "after swap: " +  data );//diag
    }
-   return counter;
+   return returnVals;
  }//end selectionSort
 
- public static int bubble( ArrayList<Comparable> data) {
+ public static int[] bubble( ArrayList<Comparable> data) {
   /* YOUR IMPLEMENTATION HERE */
   //further optimization
   // boolean isSorted = true;
-  int counter = 0;
-
+  int[] returnVals = new int[2];
 
 
   int size = data.size();
   for (int i = 0; i < size; i++) {
+    returnVals[1]++;
     for (int j = size - 1; j > 0; j--) {
       //swapping
       // isSorted = true;
+
       if (data.get(j).compareTo(data.get(j - 1)) < 0) {
         // isSorted = false; //you swap at least once
         int temp = (int) data.get(j);
@@ -83,7 +87,7 @@ public class Sorts {
         data.add(j, temp2);
         data.remove(j - 1);
         data.add(j - 1, temp);
-        counter++;
+        returnVals[0]++;
       }
 
     }
@@ -92,7 +96,7 @@ public class Sorts {
     //
     // }
   }
-  return counter;
+  return returnVals;
 }
 
 }
