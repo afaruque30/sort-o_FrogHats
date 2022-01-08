@@ -5,7 +5,6 @@ public class Sorts {
     int[] returnVals = new int[2];
 
     for(int partition = 1; partition < data.size(); partition++) {
-      returnVals[1]++;
      //partition marks first item in unsorted region
 
      // System.out.println( "\npartition: " + partition + "\tdataset:"); //diag
@@ -13,6 +12,7 @@ public class Sorts {
 
      //traverse sorted region from right to left
      for(int i = partition; i > 0; i--) {
+      returnVals[1]++;
 
        // "walk" the current item to where it belongs
        // by swapping adjacent items
@@ -45,6 +45,7 @@ public class Sorts {
      //check for greatest
      Comparable greatest = 0;
      for(int index = 0; index < pass; index++) {
+       returnVals[1]++;
        if(data.get(index).compareTo(greatest) > 0) {
          greatest = data.get(index);
          maxPos = index;
@@ -57,7 +58,6 @@ public class Sorts {
      data.add(pass, data.get(maxPos));
      data.remove(data.get(maxPos));
      returnVals[0]++;
-     returnVals[1]++;
 
      //
      // System.out.println( "after swap: " +  data );//diag
@@ -74,11 +74,11 @@ public class Sorts {
 
   int size = data.size();
   for (int i = 0; i < size; i++) {
-    returnVals[1]++;
     for (int j = size - 1; j > 0; j--) {
       //swapping
       // isSorted = true;
 
+      returnVals[1]++;
       if (data.get(j).compareTo(data.get(j - 1)) < 0) {
         // isSorted = false; //you swap at least once
         int temp = (int) data.get(j);
