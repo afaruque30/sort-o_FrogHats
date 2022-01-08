@@ -1,3 +1,10 @@
+/*
+Frog Hats -- Kevin Cheng, Abdullah Faruque, Jason Zhou
+APCS
+Lab04 -- Never Fear, Big O is Here!
+01-08-2021
+*/
+
 import java.util.*;
 public class Driver {
   public static void main(String[] args) {
