@@ -1,1 +1,40 @@
+/*
+Frog Hats -- Kevin Cheng, Abdullah Faruque, Jason Zhou
+APCS
+Lab04 -- Never Fear, Big O is Here!
+01-08-2021
+*/
 
+disco - 
+
+qcc -
+
+Bubble Sort
+ * q0: If a pass requires no swaps, what do you know?
+ * a0: its sorted
+ * q1: After pass p, what do you know?
+ * a1: the arraylsit is sorted for the first p things. 
+ * q2: How many passes are necessary to completely sort?
+ * a2: should be the length minus 1 in the worse case scenario.
+
+Selection Sort
+ * q0: How many passes to sort n elements?
+ * a0: length minus 1
+ * q1: What do you know after pass p?
+ * a1: the last size - p elements are sorted.
+ * q2: How do you know if sorted?
+ * a2: when its in order
+ * q3: What does a pass boil down to?
+ * a3: finding the next greatest value and replacing it with the current max position.
+
+Insertion Sort
+ * q0: How many passes to sort n elements?
+ * a0:length minus 1 
+ * q1: What do you know after pass p?
+ * a1: the first p indexes are sorted
+ * q2: How will you know when sorted?
+ * a2: when you are done with all the passes
+ * q3: What constitues a pass?
+ * a3:shifting the current item to its correct position
+ * q4: What must you track?
+ * a4: partition and where the item goes after sorting it.
