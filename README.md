@@ -1,7 +1,7 @@
 # sort-o_FrogHats
 #### Kevin Cheng, Abdullah Faruque, Jason Zhou
 
-#### SOTW- soon
+#### SOTW - [Enchant by Ibrahim](https://open.spotify.com/track/0sMfigk2Kj6UHSTCdzSAda?si=5dde18d37deb4625)
 
 ## BubbleSort
 * Best Case Scenario - We decided that the best case scenario for BubbleSort, and all the other sorting methods would be an ArrayList with all of its elements already sorted in ascending order. By having it already ordered, we would have done the methods job for it, which is why logically, it is the best case scenario. BubbleSort needed 0 swaps to sort a 10, 100, and 1000 sized ArrayList. However, it took 90, 9900, and 999000 comparisons. This is basically (n^2)-n comparisons, which makes BubbleSort of n^2 time complexity. When looking at the number of swaps, the time complexity is 1, since it remains at 0 for all there different lengths. 
