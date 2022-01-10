@@ -43,6 +43,10 @@ public class Driver {
     System.out.print("\t"+Sorts.insertion(new ArrayList<Comparable>(test1))[1]);
     System.out.print("\t"+Sorts.insertion(new ArrayList<Comparable>(test3))[1]);
     System.out.println("\t"+Sorts.insertion(new ArrayList<Comparable>(test5))[1]);
+    System.out.print("\t\tPasses:");
+    System.out.print("\t\t"+Sorts.insertion(new ArrayList<Comparable>(test1))[2]);
+    System.out.print("\t"+Sorts.insertion(new ArrayList<Comparable>(test3))[2]);
+    System.out.println("\t"+Sorts.insertion(new ArrayList<Comparable>(test5))[2]);
     System.out.print("Selection:\tSwaps:");
     System.out.print("\t\t"+Sorts.selection(new ArrayList<Comparable>(test1))[0]);
     System.out.print("\t"+Sorts.selection(new ArrayList<Comparable>(test3))[0]);
@@ -51,6 +55,10 @@ public class Driver {
     System.out.print("\t"+Sorts.selection(new ArrayList<Comparable>(test1))[1]);
     System.out.print("\t"+Sorts.selection(new ArrayList<Comparable>(test3))[1]);
     System.out.println("\t"+Sorts.selection(new ArrayList<Comparable>(test5))[1]);
+    System.out.print("\t\tPasses:");
+    System.out.print("\t\t"+Sorts.selection(new ArrayList<Comparable>(test1))[2]);
+    System.out.print("\t"+Sorts.selection(new ArrayList<Comparable>(test3))[2]);
+    System.out.println("\t"+Sorts.selection(new ArrayList<Comparable>(test5))[2]);
     System.out.print("Bubble:\t\tSwaps:");
     System.out.print("\t\t"+Sorts.bubble(new ArrayList<Comparable>(test1))[0]);
     System.out.print("\t"+Sorts.bubble(new ArrayList<Comparable>(test3))[0]);
@@ -59,6 +67,10 @@ public class Driver {
     System.out.print("\t"+Sorts.bubble(new ArrayList<Comparable>(test1))[1]);
     System.out.print("\t"+Sorts.bubble(new ArrayList<Comparable>(test3))[1]);
     System.out.println("\t"+Sorts.bubble(new ArrayList<Comparable>(test5))[1]);
+    System.out.print("\t\tPasses:");
+    System.out.print("\t\t"+Sorts.bubble(new ArrayList<Comparable>(test1))[2]);
+    System.out.print("\t"+Sorts.bubble(new ArrayList<Comparable>(test3))[2]);
+    System.out.println("\t"+Sorts.bubble(new ArrayList<Comparable>(test5))[2]);
     System.out.println("Best Case Scenario");
     System.out.println("Algorithm\tCounter\t\t10\t100\t1000");
     System.out.print("Insertion:\tSwaps:");
@@ -69,6 +81,10 @@ public class Driver {
     System.out.print("\t"+Sorts.insertion(new ArrayList<Comparable>(test2))[1]);
     System.out.print("\t"+Sorts.insertion(new ArrayList<Comparable>(test4))[1]);
     System.out.println("\t"+Sorts.insertion(new ArrayList<Comparable>(test6))[1]);
+    System.out.print("\t\tPasses:");
+    System.out.print("\t\t"+Sorts.insertion(new ArrayList<Comparable>(test2))[2]);
+    System.out.print("\t"+Sorts.insertion(new ArrayList<Comparable>(test4))[2]);
+    System.out.println("\t"+Sorts.insertion(new ArrayList<Comparable>(test6))[2]);
     System.out.print("Selection:\tSwaps:");
     System.out.print("\t\t"+Sorts.selection(new ArrayList<Comparable>(test2))[0]);
     System.out.print("\t"+Sorts.selection(new ArrayList<Comparable>(test4))[0]);
@@ -77,6 +93,10 @@ public class Driver {
     System.out.print("\t"+Sorts.selection(new ArrayList<Comparable>(test2))[1]);
     System.out.print("\t"+Sorts.selection(new ArrayList<Comparable>(test4))[1]);
     System.out.println("\t"+Sorts.selection(new ArrayList<Comparable>(test6))[1]);
+    System.out.print("\t\tPasses:");
+    System.out.print("\t\t"+Sorts.selection(new ArrayList<Comparable>(test2))[2]);
+    System.out.print("\t"+Sorts.selection(new ArrayList<Comparable>(test4))[2]);
+    System.out.println("\t"+Sorts.selection(new ArrayList<Comparable>(test6))[2]);
     System.out.print("Bubble:\t\tSwaps:");
     System.out.print("\t\t"+Sorts.bubble(new ArrayList<Comparable>(test2))[0]);
     System.out.print("\t"+Sorts.bubble(new ArrayList<Comparable>(test4))[0]);
@@ -85,5 +105,9 @@ public class Driver {
     System.out.print("\t"+Sorts.bubble(new ArrayList<Comparable>(test2))[1]);
     System.out.print("\t"+Sorts.bubble(new ArrayList<Comparable>(test4))[1]);
     System.out.println("\t"+Sorts.bubble(new ArrayList<Comparable>(test6))[1]);
+    System.out.print("\t\tPasses:");
+    System.out.print("\t\t"+Sorts.selection(new ArrayList<Comparable>(test2))[2]);
+    System.out.print("\t"+Sorts.selection(new ArrayList<Comparable>(test4))[2]);
+    System.out.println("\t"+Sorts.selection(new ArrayList<Comparable>(test6))[2]);
   }
 }

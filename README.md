@@ -24,10 +24,13 @@
 |-----------------|:-------------|:-------:|--------------:|:------:|
 | Insertion       | Swaps        | 0       | 0             | 0      |
 |                 | Comparisons  | 9       | 99            | 999    |
+|                 | Passes       | 9       | 99            | 999    |
 | Selection       | Swaps        | 10      | 100           | 1000   |
 |                 | Comparisons  | 55      | 5050          | 500500 |
+|                 | Passes       | 9       | 99            | 999    |
 | Bubble          | Swaps        | 0       | 0             | 0      |
 |                 | Comparisons  | 90      | 9900          | 999000 |
+|                 | Passes       | 9       | 99            | 999    |
 
 ## Worst Case Scenario
 | ALGORITHM       | SIZE         | 10      | 100           | 1000   |

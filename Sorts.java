@@ -7,11 +7,14 @@ Lab04 -- Never Fear, Big O is Here!
 
 import java.util.ArrayList;
 
+//returnVal[0] is swaps, [1] is comparisons, [2] is passes
+
 public class Sorts {
   public static int[] insertion( ArrayList<Comparable> data ) {
-    int[] returnVals = new int[2];
+    int[] returnVals = new int[3];
 
     for(int partition = 1; partition < data.size(); partition++) {
+      returnVals[2]++;
      //partition marks first item in unsorted region
 
      // System.out.println( "\npartition: " + partition + "\tdataset:"); //diag
@@ -42,13 +45,13 @@ public class Sorts {
 
  public static int[] selection( ArrayList<Comparable> data ) {
    //note: this version places greatest value at "rightmost" end
-   int[] returnVals = new int[2];
+   int[] returnVals = new int[3];
    //maxPos will point to position of SELECTION (greatest value)
    int maxPos = 0;
 
    for(int pass = data.size(); pass > 0; pass--) {
      // System.out.println( "\nbegin pass " + (data.size()-pass) );//diag
-
+     returnVals[2]++;
      //check for greatest
      Comparable greatest = 0;
      for(int index = 0; index < pass; index++) {
@@ -76,11 +79,12 @@ public class Sorts {
   /* YOUR IMPLEMENTATION HERE */
   //further optimization
   // boolean isSorted = true;
-  int[] returnVals = new int[2];
+  int[] returnVals = new int[3];
 
 
   int size = data.size();
   for (int i = 0; i < size; i++) {
+    returnVals[2]++;
     for (int j = size - 1; j > 0; j--) {
       //swapping
       // isSorted = true;
