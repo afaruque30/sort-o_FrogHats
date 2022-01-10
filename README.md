@@ -27,17 +27,20 @@
 |                 | Passes       | 9       | 99            | 999    |
 | Selection       | Swaps        | 10      | 100           | 1000   |
 |                 | Comparisons  | 55      | 5050          | 500500 |
-|                 | Passes       | 9       | 99            | 999    |
+|                 | Passes       | 10      | 100           | 1000   |
 | Bubble          | Swaps        | 0       | 0             | 0      |
 |                 | Comparisons  | 90      | 9900          | 999000 |
-|                 | Passes       | 9       | 99            | 999    |
+|                 | Passes       | 10      | 100           | 1000   |
 
 ## Worst Case Scenario
 | ALGORITHM       | SIZE         | 10      | 100           | 1000   |
 |-----------------|:-------------|:-------:|--------------:|:------:|
 | Insertion       | Swaps        | 45      | 4950          | 499500 |
 |                 | Comparisons  | 45      | 4950          | 499500 |
+|                 | Passes       | 9       | 99            | 999    |
 | Selection       | Swaps        | 10      | 100           | 1000   |
 |                 | Comparisons  | 55      | 5050          | 500500 |
+|                 | Passes       | 10      | 100           | 1000   |
 | Bubble          | Swaps        | 45      | 4950          | 499500 |
 |                 | Comparisons  | 90      | 9900          | 999000 |
+|                 | Passes       | 10      | 100           | 1000   |
